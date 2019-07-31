@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vitoriawagen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="fontawesome/js/all.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <!----
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+    -->
+
+    
+
+
+</head>
+<body>
+    <header id="header">
+        <h1 class="main_logo">Vitoriawagen</h1>
+        <a title="Inicio" href="#header">
+            <img class="logo" title="Tudo novo volkswagen - Não compre carro antes de conferir as ofertas inperdiveis da Vitoriawagen" src="img/bg.PNG" alt="Tudo novo volkswagen">
+        </a>
+    </header>  
+
+    <script>
+            $(function () {
+         $('#pills-home-tab').tab('show')
+       })
+    </script>
+
+    <section id="anuncio">
+        <div class="link">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Novo polo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Up!</a>
+                </li>                         
+            </ul>
+        </div>        
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="informativo_polo">
+                    <div class="desc_polo1">
+                        <h4><b>NOVO POLO</b></h4>
+                        <h4>1.0 MPI</h4>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="desc_polo2">
+                        <h4>A APARTIR DE <b>R$42.990,00</b></h4>
+                        <h4>+TAXA DE <b>0%</b></h4>
+                    </div>                    
+                </div>
+                <img class="foto_polo" title="Novo polo 1.0 MPI" alt="Novo polo 1.0 MPI" src="img/novo-polo-vitoriawagen-2.png">
+                <div class="desc_polo3">
+                    <p>
+                        Imagens ilustrativas. Novo Polo 1.0 MPI - preto - a apartir de RS 49.990,00 - condição de taxa 0% válida exclusivamente para modelos 1.0 MPI e 1.6 MSI com entrada de 
+                        90% e saldo em 12 meses. Promoção válida até 28/02/2018 ou enquanto durar o estoque. 
+                    </p>
+                </div>
+                <div class="linha_azul"></div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="informativo_up">
+                        <div class="desc_up1">
+                            <h4><b>TAKE UP!</b></h4>
+                            <h4>1.0 MPI</h4>
+                        </div>
+                        <div class="separador2"></div>
+                        <div class="desc_up2">
+                            <h4>A APARTIR DE <b>R$42.590,00</b></h4>
+                            <h4>+TAXA DE <b>0%</b></h4>
+                        </div>                    
+                    </div>
+                    <img class="foto_up" title="Take Up! 1.0 MPI" alt="Take Up! 1.0 MPI" src="img/take-up-vermelho.png">
+                    <div class="desc_up3">
+                        <p>
+                            Imagens ilustrativas. Novo Polo 1.0 MPI - preto - a apartir de RS 49.590,00 - condição de taxa 0% válida exclusivamente para modelos 1.0 MPI com entrada de 
+                            90% e saldo em 12 meses. Promoção válida até 28/02/2018 ou enquanto durar o estoque. 
+                        </p>
+                    </div>
+                    <div class="linha_azul"></div>
+            </div>
+            <div class="contato">
+                    <h3><b>SAIA NA FRENTE E GARANTA SEU VOLKSWAGEN.</b></h3>
+                    <h4>Escolha o modelo que você deseja e receba ofertas imperdiveis em primeira mão.</h4>
+                    <form method="post" id="formulario_contato" onsubmit="validaForm(); return false;" class="form">
+                        <p class="name">
+                            <label for="name"></label>
+                            <input type="text" name="nome" id="nome" placeholder="nome" />
+                        </p>
+                                
+                        <p class="email">
+                            <label for="email"></label>
+                            <input type="text" name="email" id="email" placeholder="e-mail" />
+                        </p>
+        
+                        <p class="telefone">
+                            <label for="telefone"></label>
+                            <input type="text" name="telefone" id="telefone" placeholder="telefone" />
+                        </p>		
+                            
+                        <p class="text">
+                            <label for="mensagem"></label>
+                            <textarea name="mensagem" id="mensagem" placeholder="mensagem"></textarea>
+                        </p>
+                                
+                        <p class="submit">
+                            <input type="submit" value="GARANTA AGORA" />
+                        </p>
+                    </form>
+                    <script type="text/javascript">
+                            function validaForm()
+                            {
+                                erro = false;
+                                if($('#nome').val() == '')
+                                {
+                                    alert('Você precisa preencher o campo Nome');erro = true;
+                                }
+                                if($('#email').val() == '' && !erro)
+                                {
+                                    alert('Você precisa preencher o campo E-mail');erro = true;
+                                }
+                                if($('#telefone').val() == '' && !erro)
+                                {
+                                    alert('Você precisa preencher o campo telefone');erro = true;
+                                }
+                                if($('#mensagem').val() == '' && !erro)
+                                {
+                                    alert('Você precisa preencher o campo Mensagem');erro = true;
+                                }                        
+                                //se nao tiver erros
+                                if(!erro)
+                                {
+                                    $('#formulario_contato').submit();
+                                }
+                            }
+                    </script>                        
+            </div>         
+        </div>       
+    </section>
+
+    <div class="logo_rodape">
+        <img class="logo_vitoriawagen" title="Vitóriavagen - A melhor marca, os melhores negócios" alt="Vitóriavagen - A melhor marca, os melhores negócios" src="img/rodape.png">
+    </div>
+
+    <script>
+            $(function () {
+         $('#pills-vitoria-tab').tab('show')
+       })
+    </script>
+
+    <footer id="footer">
+        <div class="link_footer">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-vitoria-tab" data-toggle="pill" href="#pills-vitoria" role="tab" aria-controls="pills-vitoria" aria-selected="true">Vitória</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-serra-tab" data-toggle="pill" href="#pills-serra" role="tab" aria-controls="pills-serra" aria-selected="false">Serra</a>
+                        </li>
+                </ul>
+        </div>
+            <div class="tab-content" id="pills-tabContent2">
+                <div class="tab-pane fade show active" id="pills-vitoria" role="tabpanel" aria-labelledby="pills-vitoria-tab">
+                    <p class="end">Av. Vitória, 1047 - Romão - Cep: 29041-405</p>
+                    <p class="email2">E-mail: vitoriawagen@grupolider.com.br</p>
+                    <p class="tel">Tel (27) 3331-8100</p>
+                    <ul class="footer_sociais">
+                        <li>
+                            <a href="https://www.facebook.com/higorweber.dasilva" title="facebook">
+                                <span class="logo_facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/higorws/" title="instagran">
+                                <span class="logo_instagran"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-serra" role="tabpanel" aria-labelledby="pills-serra-tab">
+                        <p class="end">BR-101, 5030 - Planalto de Carapina - Cep: 29162-703</p>
+                        <p class="email2">E-mail: vitoriawagen@grupolider.com.br</p>
+                        <p class="tel">Tel (27) 3298-3400</p>
+                        <ul class="footer_sociais">
+                            <li>
+                                <a href="https://www.facebook.com/higorweber.dasilva" title="facebook">
+                                    <span class="logo_facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/higorws/" title="instagran">
+                                    <span class="logo_instagran"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+</body>
+</html>

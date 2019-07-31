@@ -1,0 +1,280 @@
+
+/*css principal*/
+body{
+    font-family:"open sans",Verdana, Geneva, Arial, sans-serif;
+    font-size: 120%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+header{
+    width: 100%;
+    background-color: #fcf8f7;
+    position: relative;
+    height: 154px;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 150%;
+    float: left;
+}
+#anuncio{
+    position: relative;
+    margin-top: 79px;
+}
+.main_logo{
+    position: absolute;
+    left:  -99999px;
+}
+.link{
+    background:#03446C;
+}
+.link a{
+    color: #ffff;
+}
+#pills-tab{
+    padding-left: 43%;
+}
+#pills-tabContent{
+    background-image: linear-gradient(rgb(255, 255, 255),#B1B0AC);
+    width: 100%;
+    height: 400px;
+}
+.informativo_polo, .informativo_up{
+    background: #D6DBDF;
+    width: 30%;
+    height: 82px;
+    display: flex;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 125px;
+    margin-top: 45px;
+    color: rgb(29, 91, 129);
+}
+.informativo_polo b, .informativo_up b{
+    color: rgb(4, 48, 75);
+}
+.separador{
+    background: #03446C;
+    width: 1.9px;
+    height: 68px;
+    margin-top: 6px;
+    margin-left: 13px;    
+}
+.separador2{
+    background: #03446C;
+    width: 1.9px;
+    height: 68px;
+    margin-top: 6px;
+    margin-left: 37px;   
+}
+.desc_polo1, .desc_up1{
+    position: relative;
+}
+.desc_polo2, .desc_up2{
+    margin-left: 15px;
+}
+.foto_polo{
+    width: 40%;
+    margin-left: 60px;
+}
+.foto_up{
+    width: 35%;
+    margin-bottom: 17px;
+    margin-top: 31px;
+    margin-left: 100px;
+}
+.desc_polo3, .desc_up3{
+    width: 100%;
+    height: 80px;
+    background: #0478BB;
+    color: #ffff; 
+    margin-top: -7px;
+}
+.desc_polo3 p, .desc_up3 p{
+    width: 62%;
+    text-align: left;
+    margin-left: 257px;
+    /* margin-top: 50px; */
+    font-size: 11px;
+    padding-top: 25px;
+}
+#pills-profile{
+    margin-top: -520px;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 250px;
+    color: #e9dddd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+textarea {
+    width: 340px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+#mensagem{
+    margin-left: 50px;
+    margin-top: -99px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;     
+}
+.form label {
+    margin-bottom: 10px;
+    color: #999999;
+    display: block;
+}
+.form{
+    margin-left: 205px;
+    width: 50%;
+    float: left;
+    position: absolute;
+}
+.telefone{
+    float: left;
+}
+.submit input {
+    width: 342px;
+    height: 40px;
+    background-color: #4e8016;
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;                     
+}
+.submit{
+    margin-left: 303px;
+}
+div.contato h3{
+    font-size: 21px;
+    margin-bottom: 30px;
+    margin-left: 278px;
+    color: rgb(33, 93, 128);
+    
+}
+div.contato h4{
+    font-size: 16px;
+    margin-bottom: 30px; 
+    margin-left: 244px;
+    color: rgb(33, 93, 128);
+}
+div.contato{
+    margin-left: 443px;
+    margin-top: -480px;
+    width: 65%;
+}
+.linha_azul{
+    width: 100%;
+    height: 6.5px;
+    background: #03446C;
+}
+.logo_rodape{
+    width: 100%;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+.logo_rodape img{
+    margin-left: 38%;
+}
+#pills-tabContent2{
+    background: #03446C;
+    width: 100%;
+    height: 200px;
+}
+.link_footer{
+    background: #03446C;
+}
+.end::before{
+    content: url(../img/map-marker.png);
+    margin-right: 15px;
+    vertical-align: middle;
+
+}
+.email2::before{
+    content: url(../img/email.png);
+    margin-right: 15px; 
+    vertical-align: middle;   
+}
+.tel::before{
+    content: url(../img/phone.png);   
+    margin-right: 15px; 
+    vertical-align: middle;
+}
+
+.end, .email2, .tel{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#pills-tabContent2{
+    padding-top: 25px;
+}
+span.logo_facebook::after{
+    content: url(../img/facebook.png);
+    vertical-align: middle;
+
+}
+span.logo_instagran::after{
+    content: url(../img/instagram.png);
+    vertical-align: middle;
+    margin-right: 25px; 
+}
+.footer_sociais{
+    text-align: center;
+    display: flex;
+    vertical-align: middle;
+    padding-top: 11px;
+    padding-left: 656px;
+}
+#pills-serra{
+    margin-top: -175px;
+}
+#footer{
+    width: 100%;
+}
+
+/* responsividade */
+
+img, .logo{
+    max-width: 100%;
+}
+
+section, header, footer{
+    max-width: 1454px;
+    margin: 0 auto;
+}
+@media (max-width: 1285px) {
+   #header{width: 100%}
+   #mensagem{ margin-left: 24px; }
+   .submit{ margin-left: 276px; }
+   .form{ margin-left: 196px; width: 48%;}
+   div.contato h3{margin-left: 255px; }
+   div.contato h4 {margin-left: 230px;}
+  
+}  
+@media (max-width: 1260px) {
+    #header{width: 100%}
+    #mensagem{ margin-left: 24px; }
+    .submit{ margin-left: 236px; }
+    .submit input {width: 283px;}
+    .form{ margin-left: 190px; width: 50%;}
+    div.contato h3{margin-left: 255px; font-size: 19px }
+    div.contato h4 {margin-left: 230px;font-size: 15px }
+    input{width: 210px;}
+    textarea{width: 280px;}
+   .logo_rodape{margin-top: 90px; margin-bottom: -38px;}
+   .logo_rodape img {margin-top: -45px;}
+ }  
